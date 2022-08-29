@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website ESD Laboratory</title>
+    <style type="text/css">
+      p {
+        font-family: Helvetica;
+        line-height: 2 em;
+        font-size: 20px;
+        color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <style type="text/css">
+      p {
+        font-family: Helvetica;
+        line-height: 2 em;
+        font-size: 20px;
+        color: orange;
+      }
+    </style>
+
+    <h1>Selamat Datang di Website ESD Laboratory!!</h1>
+
+    <img height="400" src="images/code.jpg" alt="Thumbnail Photo Code" />
+    <p>Selamat Datang di ESD Laboratory!</p>
+    <p>
+      Memberikan Layanan dan Pelatihan mengenai Konsep Software Development,
+      UI/UX, dan Technopreneur <br />
+      Working through the hundreds of hours of free lessons
+    </p>
+    <p>
+      The well-structured curriculum took my coding knowledge from a total
+      beginner level to a very confident level. <br />
+      It was everything I needed to land my first dev job at an amazing company
+    </p>
+    <h2>Materi yang Disajikan</h2>
+    <ol>
+      <li>
+        Software Development
+        <ul>
+          <li>Pembukaan</li>
+          <li>Konsep Dasar SoftDev</li>
+        </ul>
+      </li>
+      <li>
+        UI/UX
+        <ul>
+          <li>Pembukaan</li>
+          <li>Konsep Dasar UI/UX</li>
+        </ul>
+      </li>
+      <li>
+        Technopreneur
+        <ul>
+          <li>Pembukaan</li>
+          <li>Konsep Dasar Technopreneur</li>
+        </ul>
+      </li>
+      <li>
+        Closing
+        <ul>
+          <li>Kesimpulan</li>
+          <li>Penutup</li>
+        </ul>
+      </li>
+    </ol>
+    <h3>Hubungi Kami</h3>
+    <form action="/daftar-mahasiswa.php" method="post">
+      <label for="nama">Nama Lengkap :</label>
+
+      <input type="text" id="nama" name="nama" />
+    </form>
+
+    <form action="/daftar-mahasiswa.php" method="post">
+      <label for="jurusan">Pilih jurusan :</label>
+
+      <select name="jurusan" id="jurusan">
+        <option value=" S1 Sistem Informasi">S1 Sistem Informasi</option>
+
+        <option value=" S1 Teknik Industri">S1 Teknik Industri</option>
+
+        <option value=" S1 Teknik Informatika">S1 Teknik Informatika</option>
+
+        <option value=" S1 Teknik Komputer">S1 Teknik Komputer</option>
+
+        <option value=" S1 Teknologi Informasi">S1 Teknologi Informasi</option>
+
+        <option value=" D3 Sistem Informasi">D3 Sistem Informasi</option>
+      </select>
+    </form>
+
+    <form action="/daftar-mahasiswa.php" method="post">
+      <label for="kelas">Kelas :</label>
+
+      <input type="text" id="kelas" name="kelas" />
+    </form>
+
+    <form action="/daftar-mahasiswa.php" method="post">
+      <label for="email">Email :</label>
+
+      <input type="text" id="email" name="email" />
+    </form>
+
+    <form action="/daftar-mahasiswa.php" method="post">
+      <label for="materi">Pilih materi :</label>
+
+      <select name="materi" id="materi">
+        <option value=" Software Development">Software Development</option>
+
+        <option value=" UI/UX">UI/UX</option>
+
+        <option value=" Technopreneur">Technopreneur</option>
+      </select>
+    </form>
+
+    <form action="/daftar-mahasiswa.php" method="post">
+      <label for="Pesan">Pesan :</label><br />
+
+      <textarea name="Pesan" id="Pesan" cols="30" rows="10"></textarea>
+    </form>
+
+    <script>
+      var kalimat = "Selamat Datang + nama";
+      var output = kalimat.replace(kalimat + nama);
+      console.log(output);
+      //output selamat datang + nama
+    </script>
+
+    <button onclick="alert('Selamat Datang'+ document.querySelector('input').value)">Submit</button>
+  </body>
+</html>
